@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <h1 id="title">Student Club Survey Form</h1>
+    <p id="description">Thank you for taking time to help us to improve our club</p>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: 
+          <input id="name" name="name" type="text" placeholder="Enter your name..."required/>
+        </label>
+        <label id="email-label" for="email">Email: 
+          <input id="email" name="email" type="email" placeholder="Enter your email..." required/>
+        </label>
+        <label id="number-label" for="number">Age: 
+          <input id="number" name="age" type="number" min="16" max="120" placeholder="Enter your age..."/>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        Which option best describes your current role?
+        <label for="dropdown">
+          <select id="dropdown" name="current-role">
+            <option value="" disabled selected>Select current role</option>
+            <option value="student">Student</option>
+            <option value="staff-faculty">Staff/Faculty</option>
+            <option value="others">Others</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        Are you a current club member?
+        <label for="member-option1">
+          <input type="radio" id="member-option1" value="yes" name="are-club-member" class="inline"/>
+          Yes
+        </label>
+        <label for="member-option2">
+          <input type="radio" id="member-option2" value="no" name="are-club-member" class="inline"/>
+          No
+        </label>
+        <label for="member-option3">
+          <input type="radio" id="member-option3" value="join" name="are-club-member" class="inline"/>
+          Interested to join
+        </label>
+        <label for="member-option4">
+          <input type="radio" id="member-option4" value="ng" name="are-club-member" class="inline"/>
+          Prefer not to say
+        </label>
+      </fieldset>
+
+      <fieldset>
+        What type of events you're more interested in? 
+        <label><input type="checkbox" name="event1" value="offline-on-campus-event" class="inline">Offline On-Campus Events</label>
+        <label><input type="checkbox" name="event2" value="offline-of-campus-event" class="inline">Offline Off-Campus Events</label>
+        <label><input type="checkbox" name="event3" value="online-event" class="inline">Online Events</label>
+        <label><input type="checkbox" name="event4" value="others" class="inline">Others</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="comment">
+          Any comments or suggestions?
+          <textarea id="comment" rol="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" id="submit"/>
+    </form>
+  </body>
+
+</html>
